@@ -1,7 +1,10 @@
-## Getting Started - 1 ##
+## Getting Started - 2 ##
 
-### Hello Vue ###
-At the core Vue allows us to render data to the dom using a a template syntax.
+### Binding ###
+Vue can of course do more than just text interpolation. We can also bind element attributes.
+Inside of the `index.html` you will see a `v-bind`. this attribute is called a **directive**, and they will be prefixed with `v-`. This indicates that they are special attributes provided by Vue and will apply special reactive behavior to the rendered DOM.
 
-If you look at the example it seems very similar to rendering template. Though you will notice that Vue has done a lot of the work for us under the hood. If you were to change the data `message` you would see the rendered example update.
+Our example `v-bind:title="message"` says that we should keep the title attribute up to date with the `message` property.
+
+If you open up the developer tools console in your browser and enter `app.message = 'hello world'`, then you would see the title change to this new message.
 
