@@ -9,12 +9,17 @@ These samples are taken from a number of different resources, with most of them 
 Navigating this repository is simple. Each directory provides a small example of a certain aspect of Vue with a README explaining the example and that aspect of Vue.
 
 #### Table of Contents ####
+The first section has getting started guides to quickly get you started with Vue. After that they transition to more indepth examples/posts of specific items in Vue.
 
+##### Getting Started #####
 1. [Getting Started][getting-started] - Basic getting started with Vue
 2. [Basic Binding][basic-binding] - Basic binding to elements
 3. [Conditionals and Loops][conditionals] - Basic Conditionals and Loops
 4. [Handling User Input][basic-user-input] - Basic example of handling user input
 5. [Vue Components][basic-vue-components] - Basic introduction to Vue Components
+
+##### In Depth Guides #####
+1. [Vue Instance][vue-instance] - Describes a instance of a Vue object. The options and lifecycle hooks.
 
 <!-- Link Identifiers -->
 [vue-link]: https://vuejs.org
@@ -24,4 +29,5 @@ Navigating this repository is simple. Each directory provides a small example of
 [conditionals]: https://github.com/chadsmith12/learning_vue/tree/master/getting_started3
 [basic-user-input]: https://github.com/chadsmith12/learning_vue/tree/master/getting_started4
 [basic-vue-components]: https://github.com/chadsmith12/learning_vue/tree/master/getting_started5
+[vue-instance]: https://github.com/chadsmith12/learning_vue/tree/master/vue_instance
 
