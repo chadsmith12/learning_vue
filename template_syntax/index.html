@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Getting Started - Components</title>
+</head>
+<body>
+    <div id="app">
+        <span v-if="items.length === 0">No current items</span>
+        <ol>
+            <input v-model="newItem">
+            <button @click="addItem">Add Item</button>
+            <todo-item v-for="item in items" v-bind:todo="item" v-bind:key="item.id"></todo-item>
+        </ol>
+        <span>Total Number of items: {{ items.length }}</span>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./src/index.js"></script>
+</body>
+</html>
