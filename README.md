@@ -23,6 +23,7 @@ The first section has getting started guides to quickly get you started with Vue
 2. [Template Syntax][template-syntax] - Describes the power of the template syntax and directives
 3. [Computed Properties][computed-properties] - Describes the benefit of using computed properties and shows an example of when a watcher should be used.
 4. [Class and Style Bindings][class-bindings] - Describes how you can bind to class and style attributes with the enhancements Vue provides.
+5. [Conditional Rendering][conditional-rendering] - Describes how to do conditional rendering.
 
 <!-- Link Identifiers -->
 [vue-link]: https://vuejs.org
@@ -36,3 +37,4 @@ The first section has getting started guides to quickly get you started with Vue
 [template-syntax]:https://github.com/chadsmith12/learning_vue/tree/master/template_syntax
 [computed-properties]:https://github.com/chadsmith12/learning_vue/tree/master/computed_properties
 [class-bindings]:https://github.com/chadsmith12/learning_vue/tree/master/class_bindings
+[conditional-rendering]:https://github.com/chadsmith12/learning_vue/tree/master/conditional_rendering
