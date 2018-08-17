@@ -22,6 +22,7 @@ The first section has getting started guides to quickly get you started with Vue
 1. [Vue Instance][vue-instance] - Describes a instance of a Vue object. The options and lifecycle hooks.
 2. [Template Syntax][template-syntax] - Describes the power of the template syntax and directives
 3. [Computed Properties][computed-properties] - Describes the benefit of using computed properties and shows an example of when a watcher should be used.
+4. [Class and Style Bindings][class-bindings] - Describes how you can bind to class and style attributes with the enhancements Vue provides.
 
 <!-- Link Identifiers -->
 [vue-link]: https://vuejs.org
@@ -34,4 +35,4 @@ The first section has getting started guides to quickly get you started with Vue
 [vue-instance]: https://github.com/chadsmith12/learning_vue/tree/master/vue_instance
 [template-syntax]:https://github.com/chadsmith12/learning_vue/tree/master/template_syntax
 [computed-properties]:https://github.com/chadsmith12/learning_vue/tree/master/computed_properties
-
+[class-bindings]:https://github.com/chadsmith12/learning_vue/tree/master/class_bindings
