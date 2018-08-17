@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Getting Started - Components</title>
+</head>
+<body>
+    <div id="app">
+        <template v-if="loginType === 'username'">
+            <label>Username: </label>
+            <input placeholder="Please enter your username..."/>
+        </template>
+        <template v-else>
+            <label>Email: </label>
+            <input placeholder="Please enter your email..."/>
+        </template>
+
+        <template v-if="loginType === 'username'">
+                <label>Username: </label>
+                <input key="username-input" placeholder="Please enter your username..."/>
+            </template>
+            <template v-else>
+                <label>Email: </label>
+                <input key="email-input" placeholder="Please enter your email..."/>
+            </template>
+            <button type="button" v-on:click="toggleLogin">Toggle Login</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./src/index.js"></script>
+</body>
+</html>
