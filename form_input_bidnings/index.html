@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Getting Started - Event Handling</title>
+</head>
+<body>
+    <div id="app">
+        <span>{{eventName}}</span>
+        <form @submit.prevent="submitEvent">
+            <label>Event Name: </label>
+            <input placeholder="Event Name..." type="text" v-model="eventName"><br>
+            <label>Event Description</label>
+            <textarea v-model="eventDescription" placeholder="Event Description..." cols="30" rows="10"></textarea> <br>
+            <label>Max Participants: </label>
+            <input v-model.number="maxParticipants" min="0" step="1" type="number"> <br>
+            <label>Select State: </label>
+            <select v-model="selectedState">
+                <option value="" disabled>Select a state...</option>
+                <option value="Arkansas">Arkansas</option>
+                <option value="Alabama">Alabama</option>
+            </select>
+            <br>
+            <label>Include Features: </label>
+            <input type="checkbox" id="feature1" value="Feature 1" v-model="checkedFeatures">
+            <label for="feature1">Feature 1</label>
+            <input type="checkbox" id="feature2" value="Feature 2" v-model="checkedFeatures">
+            <label for="feature2">Feature 2</label>
+            <input type="checkbox" id="feature3" value="Feature 3" v-model="checkedFeatures">
+            <label for="feature3">Feature 3</label>
+            <br>
+            <button>Submit Event</button>
+        </form>
+        <p>
+            {{ formValues }}
+        </p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./src/index.js"></script>
+</body>
+</html>
