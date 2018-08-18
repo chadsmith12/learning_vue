@@ -25,6 +25,7 @@ The first section has getting started guides to quickly get you started with Vue
 4. [Class and Style Bindings][class-bindings] - Describes how you can bind to class and style attributes with the enhancements Vue provides.
 5. [Conditional Rendering][conditional-rendering] - Describes how to do conditional rendering.
 6. [List Rendering][list-rendering] - Describes and gives a complete example on list rendering and how to handle lists.
+7. [Event Handling] - Describes how to handle events and keyboard and mouse modifiers.
 
 <!-- Link Identifiers -->
 [vue-link]: https://vuejs.org
@@ -40,3 +41,4 @@ The first section has getting started guides to quickly get you started with Vue
 [class-bindings]:https://github.com/chadsmith12/learning_vue/tree/master/class_bindings
 [conditional-rendering]:https://github.com/chadsmith12/learning_vue/tree/master/conditional_rendering
 [list-rendering]:https://github.com/chadsmith12/learning_vue/tree/master/list_rendering
+[event-handling]:https://github.com/chadsmith12/learning_vue/tree/master/event_handling
