@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Getting Started - Event Handling</title>
+</head>
+<body>
+    <div id="app">
+        <button type="button" @click="increment(1, $event)">Add 1</button>
+        <button type="button" @click="increment(2, $event)">Add 1</button>
+        <button type="button" @click.ctrl="resetCounter">Ctrl click to Reset Counter</button>
+        <p>
+            The current counter is at {{ counter }}
+        </p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./src/index.js"></script>
+</body>
+</html>
