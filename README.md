@@ -26,6 +26,7 @@ The first section has getting started guides to quickly get you started with Vue
 5. [Conditional Rendering][conditional-rendering] - Describes how to do conditional rendering.
 6. [List Rendering][list-rendering] - Describes and gives a complete example on list rendering and how to handle lists.
 7. [Event Handling][event-handling] - Describes how to handle events and keyboard and mouse modifiers.
+8. [Form and Input Bindings][form-input-binding] - Describes and shows an example of binding to form and the different input value.
 
 <!-- Link Identifiers -->
 [vue-link]: https://vuejs.org
@@ -42,3 +43,4 @@ The first section has getting started guides to quickly get you started with Vue
 [conditional-rendering]:https://github.com/chadsmith12/learning_vue/tree/master/conditional_rendering
 [list-rendering]:https://github.com/chadsmith12/learning_vue/tree/master/list_rendering
 [event-handling]:https://github.com/chadsmith12/learning_vue/tree/master/event_handling
+[form-input-binding]:https://github.com/chadsmith12/learning_vue/tree/master/form_input_bindings
