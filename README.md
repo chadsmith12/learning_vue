@@ -28,6 +28,9 @@ The first section has getting started guides to quickly get you started with Vue
 7. [Event Handling][event-handling] - Describes how to handle events and keyboard and mouse modifiers.
 8. [Form and Input Bindings][form-input-binding] - Describes and shows an example of binding to form and the different input value.
 
+#### Components ####
+1. [Basic Components][component-basics] - Examples the basics of components and how to use them.
+
 <!-- Link Identifiers -->
 [vue-link]: https://vuejs.org
 [vue-getting-started-guide]: https://vuejs.org/v2/guide/
@@ -44,3 +47,4 @@ The first section has getting started guides to quickly get you started with Vue
 [list-rendering]:https://github.com/chadsmith12/learning_vue/tree/master/list_rendering
 [event-handling]:https://github.com/chadsmith12/learning_vue/tree/master/event_handling
 [form-input-binding]:https://github.com/chadsmith12/learning_vue/tree/master/form_input_bindings
+[component-basics]:https://github.com/chadsmith12/learning_vue/tree/master/component_basics
