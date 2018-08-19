@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Getting Started - Components</title>
+</head>
+<body>
+    <div id="app">
+        <form v-on:submit.prevent="addPerson">
+            <label for="new-person-name">New Persons Name</label>
+            <input v-model="newPerson.name" type="text" id="new-person-name" placeholder="Persons name..."/>
+            <br>
+            <label for="new-person-age">New Person Age</label>
+            <input v-model="newPerson.age" type="number" step="1" id="new-person-age" placeholder="Persons age..."/>
+            <br>
+            <button>Add Person</button>
+        </form>
+
+        <button type="button" v-on:click="filterUnder21">Under 21</button>
+        <button type="button" v-on:click="filterOver21">Over 21</button>
+        <button type="button" v-on:click="clearFilter">Clear Filters</button>
+
+        <table>
+            <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Age</td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr 
+                    is="person-row"
+                    v-for="(person, index) in filteredPeople"
+                    v-bind:key="index"
+                    v-bind:person="person"
+                    v-on:remove="people.splice(index, 1)"></tr>
+            </tbody>
+        </table>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./src/index.js"></script>
+</body>
+</html>
