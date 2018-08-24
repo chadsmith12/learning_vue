@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modal Component</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+</head>
+<body>
+    <div id="app" class="container">
+          <!-- Modal Trigger -->
+        <button type="button" @click.prevent="openModal" class="waves-effect waves-light btn">Open Modal</button>
+        
+        <materialize-modal 
+                ref="exampleModal"
+                :bottom-sheet="true"
+                :fixed-footer="true"
+                v-on:modal::open::start="eventFired"
+                v-on:modal::close::end="eventFired">
+            <h4>Hello</h4>
+            <p>This is the content of the modal</p>
+        </materialize-modal>
+    </div>
+
+    <script type="text/x-template" id="modal-template">
+        <!-- Modal Structure -->
+        <div class="modal" v-bind:class="modalClasses">
+            <div class="modal-content">
+                <slot></slot>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+        </div>
+    </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
