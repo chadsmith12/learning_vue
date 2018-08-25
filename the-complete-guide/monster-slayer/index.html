@@ -39,7 +39,7 @@
             <button @click="resetGame" id="give-up">GIVE UP</button>
         </div>
     </section>
-    <section class="row log">
+    <section class="row log" v-if="logs.length > 0">
         <div class="small-12 columns">
             <ul>
                 <li v-for="log in logs" v-bind:class="log.logStyles">
