@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1>{{ msg }}</h1>
+    <app-servers></app-servers>
   </div>
 </template>
 
@@ -8,7 +8,7 @@
 export default {
   data: function() {
     return {
-      msg: 'Hello World'
+          msg: "hello world"
     }
   }
 }
