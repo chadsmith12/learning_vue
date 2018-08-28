@@ -3,7 +3,8 @@
         <app-header></app-header>
         <hr>
         <div class="row">
-            <app-servers></app-servers>
+            <app-servers
+                @server-clicked="currentServer = $event"></app-servers>
             <app-server-details></app-server-details>
         </div>
         <hr>
@@ -18,6 +19,11 @@ import ServerDetails from "./components/ServerDetails.vue"
 import Footer from "./components/Footer.vue";
 
 export default {
+    data: function() {
+        return {
+            currentServer: {}
+        }
+    },
     components: {
         'app-header': Header,
         'app-servers': AppServers,
