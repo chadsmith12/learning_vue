@@ -3,22 +3,26 @@
     <div class="container">
       <p>{{ text | toUppercase | to-lowercase }}</p>
       <hr>
+      <button @click="fruits.push('berries')">Add New item</button>
       <input type="text" v-model="filterText">
       <ul>
         <li v-for="fruit in filteredFruits" :key="fruit">{{ fruit }}</li>
       </ul>
+      <hr>
+      <List/>
     </div>
   </div>
 </template>
 
 <script>
+import List from './components/List.vue'
+import {fruitMixin} from './mix-ins/fruitMixins.js'
+
 export default {
   name: 'app',
   data() {
     return {
       text: 'Hello from the other side!',
-      fruits: ['Apple', 'Banana', 'Mango', 'Melon'],
-      filterText: ''
     }
   },
   filters: {
@@ -26,12 +30,9 @@ export default {
       return value.toUpperCase();
     }
   },
-  computed: {
-    filteredFruits() {
-      return this.fruits.filter((element) => {
-        return element.match(this.filterText);
-      })
-    }
-  }
+  components: {
+    List
+  },
+  mixins: [fruitMixin]
 }
 </script>
