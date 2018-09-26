@@ -2,7 +2,7 @@
   <div id="app">
     <div class="container-fluid">
       <h1 class="text-center">Super Quiz</h1>
-      <component :is="mode"></component>
+      <component :is="mode" @answer="onAnswer" @play-again="onPlayAgain"></component>
     </div>
   </div>
 </template>
@@ -16,6 +16,19 @@ export default {
   data() {
     return{
       mode: 'question'
+    }
+  },
+  methods: {
+    onAnswer(isCorrect) {
+      if(isCorrect) {
+        this.mode = 'answer'
+      }
+      else {
+        window.alert("I'm sorry, that is wrong!");
+      }
+    },
+    onPlayAgain() {
+      this.mode = 'question'
     }
   },
   components: {

@@ -45,9 +45,7 @@ export default {
     },
     methods: {
         onAnswer(isCorrect) {
-            if(isCorrect){
-                window.console.log("Correct!")
-            }
+            this.$emit('answer', isCorrect);
         },
 
         generateQuestion() {
