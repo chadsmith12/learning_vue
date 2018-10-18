@@ -2,7 +2,9 @@
   <div id="app">
     <div class="container-fluid">
       <h1 class="text-center">Super Quiz</h1>
-      <component :is="mode" @answer="onAnswer" @play-again="onPlayAgain"></component>
+      <transition name="flip" mode="out-in">
+          <component :is="mode" @answer="onAnswer" @play-again="onPlayAgain"></component>
+      </transition>
     </div>
   </div>
 </template>
@@ -46,5 +48,35 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.flip-enter-active {
+  animation: flip-in 0.3s ease-out forwards;
+}
+
+.flip-leave-active {
+  animation: flip-out 0.3s ease-out forwards;
+}
+
+@keyframes flip-out {
+  from {
+    /* start at not rotated at all */
+    transform: rotateY(0deg); 
+  }
+  to {
+    /* flip 90 degrees until we get to the new component */
+    transform: rotateY(90deg);
+  }
+}
+
+@keyframes flip-in {
+  from {
+    /* flip back in from 90 degrees*/
+    transform: rotateY(90deg);
+  }
+  to {
+    /* flip until it's back to 0 degrees */
+    transform: rotateY(0deg);
+  }
 }
 </style>
