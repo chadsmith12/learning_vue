@@ -26,3 +26,6 @@ We can comit this mutations from the component but we often use actions for this
 
 #### Modules ####
 Idea behind modules is that you may have different parts that belong to certain parts of an application. 
+
+### Namespaces ###
+Use Namespaces to avoid naming collision.
