@@ -21,3 +21,8 @@ This allows you to have reuseable code in the different components.
 In order to adjust or change the state, mutations are used. Mutations get the state as a parameter and optionally the payload (the data passed when mutating the state).
 We can comit this mutations from the component but we often use actions for this. Actions then allow you to take in a context and an optional payload. These actions can then be async if needed and can commit the mutations.
 
+---
+### Seperating Files ###
+
+#### Modules ####
+Idea behind modules is that you may have different parts that belong to certain parts of an application. 
